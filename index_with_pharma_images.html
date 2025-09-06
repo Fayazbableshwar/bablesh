@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fayaz Bableshwar | Analytical R&amp;D Manager | Pharmaceutical Expert</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<style>
+    :root { --primary:#005b96;--secondary:#03396c;--accent:#6497b1;--light:#f1f9ff;--dark:#011f4b;--text:#2a2a2a; }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}
+    body{line-height:1.6;color:var(--text);background:#f9f9f9;}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px;}
+    /* Header with hero image */
+    header{position:relative;color:#fff;text-align:center;padding:0;overflow:hidden}
+    .hero-wrap{position:relative;height:420px;width:100%;background:#e9eef3;display:flex;align-items:center;justify-content:center}
+    .hero-img{width:100%;height:420px;object-fit:cover;display:block}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg, rgba(1,31,75,0.45), rgba(0,91,150,0.35));}
+    .hero-content{position:absolute;z-index:2;padding:2.4rem 1rem;max-width:1100px;margin:0 auto;text-align:left}
+    .hero-inner{display:flex;align-items:center;gap:2rem}
+    .hero-text{color:#fff}
+    h1{font-size:2.4rem;margin-bottom:.2rem;color:#fff;text-shadow:0 4px 20px rgba(0,0,0,.35)}
+    .title{font-size:1.05rem;margin-bottom:1rem;color:var(--light);font-weight:300}
+    .contact-info{display:flex;flex-direction:row;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+    .contact-info a{color:#fff;text-decoration:none;padding:.4rem .8rem;display:flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.06);border-radius:4px;transition:.3s;font-size:.95rem}
+    .download-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1rem;background:#fff;color:var(--primary);text-decoration:none;border-radius:4px;font-weight:600;box-shadow:0 2px 5px rgba(0,0,0,.1);transition:.3s}
+    .download-btn:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,.2)}
+
+    nav{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);position:sticky;top:0;z-index:100}
+    .nav-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+    .logo{font-weight:700;color:var(--primary);font-size:1.5rem}
+    .nav-links{display:flex;gap:2rem}
+    .nav-links a{text-decoration:none;color:var(--dark);font-weight:600;transition:.3s;position:relative}
+    .nav-links a:hover{color:var(--primary)}
+
+    .section-title{text-align:center;margin:2.5rem 0 1.2rem;color:var(--primary);font-size:2.2rem;position:relative}
+    .section-title::after{content:'';position:absolute;width:100px;height:5px;background:var(--accent);bottom:-15px;left:50%;transform:translateX(-50%);border-radius:3px}
+    .summary,.skill-category,.experience-card,.edu-card,.cert-card,.contact-form{background:#fff;padding:2rem;border-radius:8px;box-shadow:0 5px 20px rgba(0,0,0,.05);margin-bottom:2rem}
+    .highlight-box{background:var(--light);padding:2rem;border-radius:8px;margin:2rem 0;border-left:5px solid var(--primary)}
+    .highlight-box ul{list-style:none}
+    .highlight-box li{margin-bottom:.8rem;position:relative;padding-left:1.5rem}
+    .highlight-box li::before{content:'•';color:var(--primary);font-weight:bold;position:absolute;left:0}
+    .skills-matrix{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+    .experience-card h3{color:var(--primary);margin-bottom:.5rem}
+    .experience-card span{font-weight:bold;color:var(--dark)}
+    form input,form textarea{width:100%;padding:10px;margin-top:.5rem;border:1px solid #ccc;border-radius:4px}
+    form button{padding:12px 20px;background:var(--primary);color:#fff;border:none;border-radius:4px;cursor:pointer;transition:.3s}
+    form button:hover{background:var(--secondary)}
+    footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 0;margin-top:3rem}
+    .social-links{display:flex;justify-content:center;gap:1.5rem;margin:1.5rem 0}
+    .social-links a{color:#fff;font-size:1.8rem;transition:.3s}
+    .social-links a:hover{color:var(--accent);transform:translateY(-3px)}
+
+    /* New gallery section styling */
+    .lab-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-bottom:2rem}
+    .lab-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.06);min-height:320px;display:flex;flex-direction:column}
+    .lab-card img{width:100%;height:220px;object-fit:cover;display:block;background:#e9eef3}
+    .lab-card .caption{padding:1rem;font-size:.95rem;color:var(--text);margin-top:auto}
+
+    /* Responsive tweaks */
+    @media (max-width:980px){
+        .hero-inner{flex-direction:column;align-items:flex-start}
+        .hero-content{padding:1.2rem}
+    }
+    @media (max-width:768px){
+        h1{font-size:1.6rem}
+        .hero-wrap{height:260px}
+        .hero-img{height:260px}
+        .lab-card img{height:180px}
+        .section-title{font-size:1.6rem}
+    }
+</style>
+</head>
+<body>
+<!-- Updated hero: single slide with clear image element and graceful fallback -->
+<header>
+    <div class="hero-wrap">
+        <img class="hero-img" id="heroMain" src="1755432739163.jpeg" alt="Lab hero image" onerror="this.dataset.failed='1';this.src='9da219c9-b34d-4c63-ae48-7763e1d495e0.png'"/>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1>Fayaz Bableshwar</h1>
+                    <p class="title">Senior Analytical R&amp;D Manager | Pharmaceutical Research Leader</p>
+                    <div class="contact-info">
+                        <a href="mailto:fs_010@yahoo.com"><i class="fas fa-envelope"></i> fs_010@yahoo.com</a>
+                        <a href="tel:+919967824174"><i class="fas fa-phone"></i> +91 9967824174</a>
+                        <a href="#"><i class="fas fa-map-marker-alt"></i> Mumbai, India</a>
+                    </div>
+                </div>
+                <div style="margin-left:auto;display:flex;align-items:center;gap:10px">
+                    <a class="download-btn" href="#"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container nav-container">
+        <div class="logo">Fayaz Bableshwar</div>
+        <div class="nav-links">
+            <a href="#professional-summary">Profile</a>
+            <a href="#core-skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<section class="container" id="professional-summary">
+    <h2 class="section-title">Professional Profile</h2>
+    <div class="summary">
+        <p>Accomplished Analytical R&amp;D and Quality Compliance Leader with <strong>19+ years</strong> of expertise in pharmaceutical research, method development, validation, and regulatory compliance across <strong>US, EU, and ROW markets</strong>. Proven track record of filing <strong>30+ ANDAs and 6 NDAs</strong>, driving QMS/LIMS/DMS digital transformation, and achieving <strong>100% audit readiness</strong> across multiple global inspections (USFDA, EMA, MHRA, Indian FDA).</p>
+    </div>
+</section>
+
+<section class="container" id="core-skills">
+    <h2 class="section-title">Core Competencies</h2>
+    <div class="skills-matrix">
+        <div class="skill-category">
+            <h3><i class="fas fa-flask"></i> Analytical Development</h3>
+            <p>Method Development, Validation, Stability &amp; Dissolution Testing, ICH Guidelines, HPLC/GC/LCMS</p>
+        </div>
+        <div class="skill-category">
+            <h3><i class="fas fa-file-contract"></i> Regulatory Affairs</h3>
+            <p>ANDA/NDA Submissions, cGMP Compliance, Audit Management (USFDA, MHRA), Global Regulatory Strategy</p>
+        </div>
+        <div class="skill-category">
+            <h3><i class="fas fa-cogs"></i> Leadership &amp; Quality</h3>
+            <p>QMS/LIMS/DMS Implementation, Technology Transfer, Process Optimization, Change Control, Risk Assessment</p>
+        </div>
+        <div class="skill-category">
+            <h3><i class="fas fa-users"></i> Team &amp; Talent</h3>
+            <p>Cross-functional Leadership, Mentoring, Non-Conformance Oversight, Stakeholder Engagement, Talent Development</p>
+        </div>
+    </div>
+
+    <div class="section-title" style="margin-top:2rem;">Laboratory & Research Highlights</div>
+    <div class="lab-gallery" aria-hidden="false">
+        <div class="lab-card">
+            <img src="1755432739163.jpeg" alt="Scientist working at microscope" onerror="this.src='9da219c9-b34d-4c63-ae48-7763e1d495e0.png'"/>
+            <div class="caption">Advanced analytical testing and method development laboratories with strict GxP controls.</div>
+        </div>
+        <div class="lab-card">
+            <img src="y4d0wpharma450.jpg" alt="Digital analysis and lab data visualization" onerror="this.src='9da219c9-b34d-4c63-ae48-7763e1d495e0.png'"/>
+            <div class="caption">Digital QMS / DMS integrations and data-driven decision making for regulatory submissions.</div>
+        </div>
+        <div class="lab-card">
+            <img src="pharmacist-day-celebration-with-male-pharmacist-1536x1024.jpg" alt="Senior pharmacist reviewing formulation" onerror="this.src='9da219c9-b34d-4c63-ae48-7763e1d495e0.png'"/>
+            <div class="caption">Seasoned leadership overseeing technology transfer, stability programs, and audit readiness.</div>
+        </div>
+    </div>
+</section>
+
+<section class="container" id="experience">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="experience-card">
+        <h3>Manager | Rubicon Research Pvt Ltd, Mumbai</h3>
+        <span>Nov 2020 – Present</span>
+        <p>
+            Developed 15+ analytical methods for US, UK, and ROW market submissions in compliance with regulatory requirements. 
+            Implemented QMS/DMS digitalization, reducing manual errors and improving compliance efficiency by 30%.
+        </p>
+    </div>
+    <div class="experience-card">
+        <h3>From R&amp;D Officer to Manager-2 | Sun Pharmaceutical Industries Ltd, Mumbai</h3>
+        <span>Dec 2005 – Oct 2020</span>
+        <p>
+            Directed analytical method development for numerous complex molecules and generic formulations. 
+            Supported ANDA filings and global regulatory submissions across US, EU, and ROW markets.
+        </p>
+    </div>
+</section>
+
+<section class="container" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-card">
+        <h3>M.Sc. in Analytical Chemistry</h3>
+        <p>Vinayaka Mission University, 2013</p>
+    </div>
+    <div class="edu-card">
+        <h3>B.Sc. in Chemistry</h3>
+        <p>Mumbai University, 2004</p>
+    </div>
+</section>
+
+<section class="container" id="certifications">
+    <h2 class="section-title">Certifications &amp; Trainings</h2>
+    <div class="cert-card">
+        <ul>
+            <li>PG Advance Diploma in Technical &amp; Analytical Chemistry — MET, Bandra (2005)</li>
+            <li>Regulatory Compliance and eCTD in Pharmaceutical Chemistry (2012)</li>
+            <li>In-house Training: LCMS, GCMS, FTNIR, Nitrosamine Risk Assessment</li>
+            <li>QMS &amp; DMS Digitalization Program — Pharma Summit 2017–2018</li>
+        </ul>
+    </div>
+</section>
+
+<section class="container" id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-form">
+        <p>If you’d like to discuss opportunities, collaborations, or have any questions, please fill out the form below. I’ll get back to you at the earliest.</p>
+        <form action="https://formspree.io/f/xblknenn" method="POST">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" required type="text"/>
+            <label for="email">Your Email</label>
+            <input id="email" name="_replyto" required type="email"/>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required rows="5"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <h3>Ready to discuss how I can contribute to your organization?</h3>
+    <p>Open to senior leadership opportunities in R&amp;D, Quality Compliance, or Regulatory Affairs.</p>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-researchgate"></i></a>
+        <a href="mailto:fs_010@yahoo.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+919967824174"><i class="fas fa-phone"></i></a>
+    </div>
+    <p class="hr-note">HR professionals: Download my complete resume for detailed qualifications and references.</p>
+</footer>
+
+<script>
+// Fallback: if hero image failed, try alternate filenames or placeholder
+(function(){
+    const hero = document.getElementById('heroMain');
+    if(!hero) return;
+    hero.addEventListener('error', ()=>{
+        // already handled by onerror attribute; nothing extra required here
+    });
+    // Ensure gallery images show placeholder if not found
+    document.querySelectorAll('.lab-gallery img').forEach(img=>{
+        img.addEventListener('error', ()=>{
+            img.src = '9da219c9-b34d-4c63-ae48-7763e1d495e0.png';
+        })
+    })
+})();
+</script>
+</body>
+</html>
